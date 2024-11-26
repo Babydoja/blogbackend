@@ -9,7 +9,7 @@ const PORT = 5000
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
-app.use(cors({  origin:["http://localhost:5173"] }))
+app.use(cors({  origin:["http://localhost:5173","https://blog-steel-one-91.vercel.app/"] }))
 app.use(router)
 mongoose.connect(process.env.MONGO_URL)
 .then((req,res)=>{
